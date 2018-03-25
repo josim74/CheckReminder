@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Check Reminder</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="check_date">Check Date</string>
+    <string name="bank">Bank</string>
+    <string name="check_number">Check Number</string>
+    <string name="save">SAVE</string>
+    <string name="from_card">From:</string>
+    <string name="to_card">To:</string>
+    <string name="amount">Amount:</string>
+    <string name="bank_card">bank:</string>
+    <string-array name="bank_name">
+        <item>Select Bank</item>
+        <item>DBBL</item>
+        <item>BRACK BANK</item>
+        <item>UTTARA BANK</item>
+        <item>UC Bank</item>
+    </string-array>
+</resources>

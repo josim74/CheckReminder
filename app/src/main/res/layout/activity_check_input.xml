@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="softtech.smg.com.checkreminder.CheckInputActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:padding="8dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/from"/>
+
+                <EditText
+                    android:id="@+id/et_providerName_CheckInput"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:hint="Name Here"
+                    android:inputType="text" />
+            </LinearLayout>
+            <LinearLayout
+                android:padding="8dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/to"/>
+
+                <EditText
+                    android:id="@+id/et_holderName_CheckInput"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:hint="Name Here"
+                    android:inputType="text" />
+            </LinearLayout>
+            <LinearLayout
+                android:padding="8dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:text="@string/check_date"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_weight="3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/et_date_CheckInput"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:inputType="date"
+                        android:hint="Date Here"/>
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:padding="8dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bank"/>
+                <Spinner
+                    android:id="@+id/spinner_banks_CheckInput"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:entries="@array/bank_name"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                android:padding="8dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/check_number"/>
+
+                <EditText
+                    android:id="@+id/et_checkNumber_CheckInput"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:hint="Check Number Here"
+                    android:inputType="number" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_save_CheckInput"
+                android:layout_marginTop="24dp"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

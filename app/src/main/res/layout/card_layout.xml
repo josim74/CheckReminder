@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    cardCornerRadius="5dp"
+    cardElevation="3dp"
+    cardPreventCornerOverlap="true"
+    cardUseCompatPadding="true"
+    android:layout_width="match_parent"
+    android:layout_height="72dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:gravity="center"
+                android:padding="4dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_gravity="center"
+                    android:textSize="16sp"
+                    android:text="@string/from_card"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_providerName_card"
+                    android:layout_gravity="center"
+                    android:textSize="16sp"
+                    android:text="Jubaer"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.3"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_gravity="center"
+                    android:textSize="16sp"
+                    android:text="@string/to_card"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_holderName_card"
+                    android:layout_gravity="center"
+                    android:textSize="16sp"
+                    android:text="Mr Rabbi:"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.5"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_date_card"
+                    android:layout_gravity="center"
+                    android:textSize="10sp"
+                    android:text="20-10-2018"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.8"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:padding="4dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_gravity="center"
+                    android:textSize="13sp"
+                    android:text="@string/amount"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_amount_card"
+                    android:layout_gravity="center"
+                    android:textSize="13sp"
+                    android:text="600000"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_gravity="center"
+                    android:textSize="13sp"
+                    android:text="Ch.No:"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_checkNumber_card"
+                    android:layout_gravity="center"
+                    android:textSize="13sp"
+                    android:text="113322445566"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.8"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_gravity="center"
+                    android:textSize="13sp"
+                    android:text="@string/bank_card"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.8"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_bankName_card"
+                    android:layout_gravity="center"
+                    android:textSize="13sp"
+                    android:text="DBBL"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.5"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
