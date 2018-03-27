@@ -21,6 +21,31 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
+                <RadioGroup
+                    android:id="@+id/radio_group"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/rdbtn_payable_CheckInput"
+                        android:text="Payable"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <RadioButton
+                        android:id="@+id/rdbtn_recievable_CheckInput"
+                        android:text="Recievable"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:padding="8dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
                 <TextView
                     android:layout_weight="1"
                     android:layout_width="0dp"
@@ -99,13 +124,15 @@
                     android:layout_weight="1"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/bank"/>
-                <Spinner
-                    android:id="@+id/spinner_banks_CheckInput"
+                    android:text="@string/amount"/>
+
+                <EditText
+                    android:id="@+id/et_amount_CheckInput"
                     android:layout_width="0dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="3"
-                    android:entries="@array/bank_name"
-                    android:layout_height="wrap_content"/>
+                    android:hint="Amount Here"
+                    android:inputType="number" />
             </LinearLayout>
             <LinearLayout
                 android:padding="8dp"
@@ -126,6 +153,24 @@
                     android:layout_weight="3"
                     android:hint="Check Number Here"
                     android:inputType="number" />
+            </LinearLayout>
+            <LinearLayout
+                android:padding="8dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bank"/>
+                <Spinner
+                    android:id="@+id/spinner_banks_CheckInput"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:entries="@array/bank_name"
+                    android:layout_height="wrap_content"/>
             </LinearLayout>
             <Button
                 android:id="@+id/btn_save_CheckInput"
