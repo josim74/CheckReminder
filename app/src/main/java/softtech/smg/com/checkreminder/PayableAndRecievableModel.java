@@ -6,36 +6,26 @@ package softtech.smg.com.checkreminder;
 
 public class PayableAndRecievableModel {
 
-    private String checkFrom;
-    private String checkTo;
+    private String personName;
     private String checkDate;
     private String amount;
     private String checkNumber;
     private String bankName;
 
-    public PayableAndRecievableModel(String checkFrom, String checkTo, String checkDate, String amount, String checkNumber, String bankName) {
-        this.checkFrom = checkFrom;
-        this.checkTo = checkTo;
+    public PayableAndRecievableModel(String personName, String checkDate, String amount, String checkNumber, String bankName) {
+        this.personName = personName;
         this.checkDate = checkDate;
         this.amount = amount;
         this.checkNumber = checkNumber;
         this.bankName = bankName;
     }
 
-    public String getCheckFrom() {
-        return checkFrom;
+    public String getPersonName() {
+        return personName;
     }
 
-    public void setCheckFrom(String checkFrom) {
-        this.checkFrom = checkFrom;
-    }
-
-    public String getCheckTo() {
-        return checkTo;
-    }
-
-    public void setCheckTo(String checkTo) {
-        this.checkTo = checkTo;
+    public void setPersonName(String personName) {
+        this.personName = personName;
     }
 
     public String getCheckDate() {

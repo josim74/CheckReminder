@@ -20,7 +20,7 @@ public class PayableFragment extends Fragment {
 
     private RecyclerView recyclerView;
     private List<PayableAndRecievableModel> payableAndRecievableModelList;
-    private MyRecyclerAdapter myRecyclerAdapter;
+    private MyRecyclerAdapterPayable myRecyclerAdapterPayable;
     private View mView;
 
     public PayableFragment() {
@@ -36,15 +36,15 @@ public class PayableFragment extends Fragment {
         payableAndRecievableModelList = new ArrayList<>();
 
         recyclerView = mView.findViewById(R.id.recyclerView_payable);
-        recyclerView.setHasFixedSize(true);
+        recyclerView.setHasFixedSize(false);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
-        payableAndRecievableModelList.add(new PayableAndRecievableModel(" Md. Josim Uddin", " Moniruzzaman", "10-03-2018", "5000", " 112233445566", "DBBL"));
-        payableAndRecievableModelList.add(new PayableAndRecievableModel(" Md. Josim Uddin1", " Moniruzzaman1", "11-03-2018", "6000", " 112233445567", "UTTARA"));
-        payableAndRecievableModelList.add(new PayableAndRecievableModel(" Md. Josim Uddin2", " Moniruzzaman2", "12-03-2018", "7000", " 112233445568", "DHAKA"));
+        payableAndRecievableModelList.add(new PayableAndRecievableModel(" Md. Josim Uddin", "10-03-2018", "5000", " 112233445566", "DBBL"));
+        payableAndRecievableModelList.add(new PayableAndRecievableModel(" Md. Josim Uddin1","11-03-2018", "6000", " 112233445567", "UTTARA"));
+        payableAndRecievableModelList.add(new PayableAndRecievableModel(" Md. Josim Uddin2","12-03-2018", "7000", " 112233445568", "DHAKA"));
 
-        myRecyclerAdapter = new MyRecyclerAdapter(getContext(), payableAndRecievableModelList);
-        recyclerView.setAdapter(myRecyclerAdapter);
+        myRecyclerAdapterPayable = new MyRecyclerAdapterPayable(getContext(), payableAndRecievableModelList);
+        recyclerView.setAdapter(myRecyclerAdapterPayable);
 
         return mView;
     }
